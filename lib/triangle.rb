@@ -1,6 +1,6 @@
 require 'pry'
 class Triangle
-  attr_accessor
+  attr_accessor :kind
 
   def initialize(a,b,c)
     @a = a
