@@ -9,13 +9,13 @@ class Triangle
   end
 
   def kind
-    if (@a + @b <= @c) || (@a + @c <= @b) || (@c + @b <= @a) || @a = 0 || @b = 0 || @c = 0
+    if (@a + @b <= @c) || (@a + @c <= @b) || (@c + @b <= @a) || @a == 0 || @b == 0 || @c == 0
       # binding.pry
-      # begin
-      #   raise TriangleError
-      #   puts error.message
-      # end
-      puts "not a triangle"
+      begin
+        raise TriangleError
+        puts error.message
+      end
+      # puts "not a triangle"
     else
       if (a == b) && (b == c)
         # binding.pry
