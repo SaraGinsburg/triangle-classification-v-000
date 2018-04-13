@@ -17,10 +17,10 @@ class Triangle
       end
       # puts "not a triangle"
     else
-      if (a == b) && (b == c)
+      if (@a == @b) && (@b == @c)
         # binding.pry
           self.kind = :equilateral
-      elsif (a == b) || (b == c) || (c == a)
+      elsif (@a == @b) || (@b == @c) || (@c == @a)
         self.kind =  :isosceles
       else
         self.kind =  :scalene
